@@ -1,0 +1,15 @@
+<script>
+    document.addEventListener('copy', function (e) {
+
+        if (typeof window.getSelection == "undefined") return; //IE8 or earlier...
+
+        var body_element = document.getElementsByTagName('body')[0];
+        var selection = window.getSelection();
+        var selectedText = selection.getRangeAt(0).toString();
+
+        selectedText += " - <?php echo $this->smartyText(); ?>";
+
+        e.clipboardData.setData('text/plain', selectedText);
+        e.preventDefault();
+    });
+</script>

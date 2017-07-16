@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <BroSolutions_SmartCopyPaste>
+      <version>0.1.0</version>
+    </BroSolutions_SmartCopyPaste>
+  </modules>
+  <global>
+    <helpers>
+      <smartcopypaste>
+        <class>BroSolutions_SmartCopyPaste_Helper</class>
+      </smartcopypaste>
+    </helpers>
+    <blocks>
+      <smartcopypaste>
+        <class>BroSolutions_SmartCopyPaste_Block</class>
+      </smartcopypaste>
+    </blocks>
+    <models>
+      <smartcopypaste>
+        <class>BroSolutions_SmartCopyPaste_Model</class>
+      </smartcopypaste>
+    </models>
+  </global>
+  <frontend>
+    <layout>
+      <updates>
+        <smartcopypaste>
+            <file>brosolutions/copypaste.xml</file>
+        </smartcopypaste>
+      </updates>
+    </layout>
+  </frontend>
+  <admin>
+    <routers>
+      <adminhtml>
+        <args>
+          <modules>
+            <smartcopypaste before="Mage_Adminhtml">BroSolutions_SmartCopyPaste_Adminhtml</smartcopypaste>
+          </modules>
+        </args>
+      </adminhtml>
+    </routers>
+  </admin>
+</config> 

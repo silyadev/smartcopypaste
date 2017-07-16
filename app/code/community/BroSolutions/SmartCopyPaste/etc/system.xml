@@ -1,0 +1,38 @@
+<config>
+    <tabs>
+        <brosolution translate="label" module="smartcopypaste">
+            <label>Brothers Solutions</label>
+            <sort_order>100</sort_order>
+        </brosolution>
+    </tabs>
+    <sections>
+        <smartcopypaste>
+            <label>Smart Copy Paste</label>
+            <tab>brosolution</tab>
+            <frontend>text</frontend>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <global translate="label" module="smartcopypaste">
+                    <label>Smart Copy Paste</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <smarttext translate="label" module="smartcopypaste">
+                            <label>Smart Field</label>
+                            <comment>This text will be added to the clipboard</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </smarttext>
+                    </fields>
+                </global>
+            </groups>
+        </smartcopypaste>
+    </sections>
+</config>

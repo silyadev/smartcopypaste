@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <default>
+        <reference name="after_body_start">
+            <block type="smartcopypaste/smartcopypaste" name="copypast" template="brosolutions/smartcopypaste/variable.phtml"></block>
+        </reference>
+        <!--<reference name="head">-->
+            <!--<action method="addItem"><type>skin_js</type><name>js/brosolutions/smartcopypaste/copypaste.js</name></action>-->
+        <!--</reference>-->
+    </default>
+</layout>
